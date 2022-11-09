@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: merriweather, sans-serif;
+ }
+ h1 {
+    margin: 50px auto 0 auto;
+    font-family: sacramento, sans-serif;
+    color: #66BFBF;
+    font-size: 5rem;
+    font-weight: lighter;
+ }
+ h2 {
+     font-size: 1.5rem;
+     font-weight: normal;
+     color: #66BFBF;
+     margin-top: 0;
+  }
+ .top-container {
+     background-color: #E4F9F5;
+     padding-top: 100px;
+ }
+ span {
+     text-decoration: underline;
+ }
+ .top-cloud {
+     position: absolute;
+     top: 50px;
+     right: 300px;
+ }
+ .bottom-cloud {
+     position: absolute;
+     left: 300px;
+     bottom: 300px;
+ }
+ .mountain {
+     width: 30%;
+ }
+ .ns-photo {
+     width: 12%;
+     position: absolute;
+     right: 150px;
+     bottom: 250px;
+     border-radius: 50%;
+ }
+ .mid-container {
+     width: 60%;
+     margin: auto;
+     text-align: left;
+     
+ }
+ .skills {
+     border-radius: 50%;
+     float: left;
+     margin-right: 20px;
+ }
+ .mid-h2 {
+     text-align: center;
+     padding-bottom: 20px;
+     padding-top: 20px;
+ }
+ .weatherDetails {
+     background-color: #66BFBF;
+     display: none
+     
+ }
+ 
