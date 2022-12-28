@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="images/NSFavicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body class="chd">
+    <h3>Thanks. Your question has been added successfully in our database</h3>
+    <h3>Add more questions</h3>
+    <form action="/question-add" method="post"> 
+        <input type="Number" name="number" placeholder="Question Number"> 
+        <input type="text" name="question" placeholder="Add question">  
+        <input type="text" name="option1" placeholder="Add Option1">  
+        <input type="text" name="option2" placeholder="Add Option2"> 
+        <input type="text" name="option3" placeholder="Add Option3"> 
+        <input type="text" name="option4" placeholder="Add Option4">  
+        <input type="text" name="answer" placeholder="Add Answer">        
+        <button type="submit">ADD QUESTIONS TO THE BANK</button>
+    </form>
+    <form action="/" method="get">     
+        <button id="no-button" type="submit">NO</button>
+    </form> 
+         
+    <a href="/">NO THANKS</a>
+    
+        
+</body>
+</html>

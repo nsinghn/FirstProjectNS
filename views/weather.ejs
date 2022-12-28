@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="images/NSFavicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section >
+    <nav id="Title" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+        <a class="navbar-brand" href=" ">MyWorld</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+         <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#mid-container ">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#third-container">My-City</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#fourth-container ">Your-City</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#DB-container ">Quiz</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Add-questions">Add-Question</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+    </section>
+
+</body>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="Cloud-Image">
+        <h1 class="Iam">I'm Narender</h2>
+        <h2 class="who">a full stack Web <span>Dev</span>eloper</h2>
+        <img class="bottom-cloud" src="images/cloud.png" alt="Cloud-Image">
+        <img class="ns-photo" src="images/NS-photo.png" alt="NS-Photo">
+    </div>
+    <div id="mid-container">
+        <h3 class="mid-h3">My Skills</h3>
+        <div>
+            <img class="skills" src="images/skills.png" alt="skills-Image">
+            <div class="skill-langs">
+               <p>Front End: HTML, CSS, JavaScript, JQuery, BootStrap</p>
+                <p>Back End: Java, PHP, Node js, API, EJS, RestAPI</p>
+                <p>DB: SQL, Mangoos</p>
+            </div>           
+        </div>    
+           
+    </div>
+    <BR>
+    <div id="third-container">
+        <div class="myCity">
+            <h3>My City</h3>
+        </div>
+        
+        <div>
+            <img class="city-image" src="images/chd-city.jpg" alt="Chd-Image">
+            <div class="city-details">                               
+               
+               
+                   <div class="weatherDetails">
+                       <UL>
+                            <li><h4>Chandigarh, India</h4></li>
+                            <li><p><%= cityChd %>...<a href="/chd">Read More</a></p></li>
+                            <li><p>Today is <%= citydate %>,  <%= cityTime %></p></li>    
+                           <li><p>Current Temp in <%= cityName %> is <%= cityTemp %> Deg Centigrade </p></li>
+                           <li><p>Current Weather Description : <%= cityweatherDescp %> & 
+                           Weather Image: <img class="weatherImage" src=<%= cityiconURL %>></li>
+                        </UL>
+                   </div>
+            
+             
+                        
+                          
+            </div>           
+        </div>       
+                         
+    </div>
+    <div id="fourth-container">
+        <div class="yrCity">
+            <h3>Your City</h3>
+        </div>      
+              
+        <form action="/" method="post">
+            <p>Check weather in your city. 
+            <input type="text" name="city" placeholder="Enter your City Name">
+            <button type="submit" style="background-color: #66BFBF;">GO</button>
+        </form></p>
+        
+    </div>
+    
+    <div id="DB-container">
+        <div class="quiz">
+            <h3>Quiz Time</h3>
+        </div> 
+        <div id="quiz-block">
+           
+            <form class="button" action="/quiz-start" method="get">  
+            <p>Are to willing to take a quiz           
+            <button id="yes-button" type="submit">YES</button>
+            </form></p>            
+        </div>
+    </div>
+    <div id="Add-questions">
+            <div class="add-question">
+                <h3>Add Question</h3>
+            </div> 
+
+        <form action="/question-add" method="post"> 
+            <input type="text" name="question" placeholder="Add question"> <br> 
+            <input type="text" name="option1" placeholder="Add OptionA">  
+            <input type="text" name="option2" placeholder="Add OptionB"> 
+            <input type="text" name="option3" placeholder="Add OptionC"> 
+            <input type="text" name="option4" placeholder="Add OptionD"> <br> 
+            <input type="text" name="answer" placeholder="Add Answer(A/B/C/D)">  
+            <button id="quiz-button" type="submit" class="btn btn-danger"><%= QuestionStatus %></button>      
+            <button type="submit"><%= QuestionStatus %></button>
+        </form>       
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

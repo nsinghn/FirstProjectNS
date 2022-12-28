@@ -3,14 +3,16 @@ body {
     text-align: center;
     font-family: merriweather, sans-serif;
  }
- h1 {
+ .Iam {
+    text-align: center;
     margin: 50px auto 0 auto;
     font-family: sacramento, sans-serif;
     color: #66BFBF;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: lighter;
  }
- h2 {
+ .who {
+     text-align: center;
      font-size: 1.5rem;
      font-weight: normal;
      color: #66BFBF;
@@ -18,20 +20,20 @@ body {
   }
  .top-container {
      background-color: #E4F9F5;
-     padding-top: 100px;
+     padding-top: 120px;
+     padding-bottom: 10px;
+     z-index: 0;
  }
- span {
-     text-decoration: underline;
- }
+ 
  .top-cloud {
      position: absolute;
-     top: 50px;
+     top: 70px;
      right: 300px;
  }
  .bottom-cloud {
      position: absolute;
-     left: 300px;
-     bottom: 300px;
+     left: 200px;
+     bottom: 400px;
  }
  .mountain {
      width: 30%;
@@ -39,29 +41,136 @@ body {
  .ns-photo {
      width: 12%;
      position: absolute;
-     right: 150px;
-     bottom: 250px;
+     right: 50px;
+     bottom: 400px;
      border-radius: 50%;
  }
- .mid-container {
-     width: 60%;
+ #mid-container {
+     width: 80%;
      margin: auto;
-     text-align: left;
-     
+     text-align: left; 
+     color: #66BFBF;  
+ }
+ .skill-langs {
+    font-size: 20px;
+    margin-top: 40px;
  }
  .skills {
      border-radius: 50%;
      float: left;
      margin-right: 20px;
+     margin-top: 0px;
+     width: 150px;
  }
- .mid-h2 {
-     text-align: center;
-     padding-bottom: 20px;
-     padding-top: 20px;
+ .mid-h3 {
+    float: left;
+    margin-top: 40px;
+    margin-right: 50px;
  }
- .weatherDetails {
-     background-color: #66BFBF;
-     display: none
+ .weatherDetails ul li {
+ 
+     list-style-type: none;
      
  }
+ #question-block {
+   display: none;
+}
+#Title {
+    background-color: #66BFBF;
+    height: 60px;
+   
+}
+.container-fluid {
+    
+}
+h1 {
+    color: white;
+    font-weight: bolder;
+}
+.navbar {
+    padding-bottom: 10rem;
+}
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0
+}
+.city-image {
+    border-radius: 50%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 0px;
+    width: 200px;
+    height: 190px;
+}
+.weatherImage {
+    width: 40px;
+}
+#third-container {
+    width: 80%;
+    margin: auto;
+    text-align: left; 
+    color: #ff4c68;  
+    
+}
+.myCity {
+   float: left;
+    margin: 70px 50px 70px 0px;
+    
+ }
+ #fourth-container {
+   
+    margin: auto;
+    text-align: left; 
+    color: #66BFBF;  
+    background-color: #E4F9F5;
+}
+.yrCity {
+    float: left;
+    margin-right: 40px;
+    margin-left: 120px;
+     
+  }
+.yrCity1 {
+    float: left;
+    margin: 40px 40px 40px 120px;
+   
+     
+  }
+  .yrCity2 {
+    float: left;
+    margin: 20px 40px 0px 120px
+        
+  }
+  #DB-container {
+   
+    margin: auto;
+    text-align: left; 
+    color: #66BFBF;  
+    background-color: #E4F9F5;
+  }
+  .quiz {
+    float: left;
+    margin: 0px 25px 0px 120px
+        
+  }
  
+ #Add-questions {  
+    margin: auto;
+    text-align: left; 
+    color: #ff4c68;  
+  }
+  .add-question {
+    float: left;
+    margin: 30px 25px 40px 120px
+        
+  }
+#quiz-button {
+    height: 30px;
+    margin-bottom: 3px;
+    --bs-btn-font-size: .75rem;
+    --bs-btn-margin-bottom: 20px;
+}
+  

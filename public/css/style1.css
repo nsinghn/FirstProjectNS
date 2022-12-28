@@ -1,0 +1,56 @@
+
+#Title {
+    background-color: #ff4c68;
+    padding: 5% 15%;
+    height: 500px;
+}
+.container-fluid {
+    
+}
+h1 {
+    color: white;
+    font-weight: bolder;
+}
+.navbar {
+    padding-bottom: 10rem;
+}
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0 15px;
+}
+.dogImage {
+   padding-top: 50px;
+   transform: rotate(25deg);
+}
+.mid-section {
+    padding: 7% 15%;
+  
+}
+.col-lg-4 {
+    text-align: center;
+    padding: 5%;
+}
+.fa-solid {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.fa-solid:hover {
+    color: #ff4c68;
+}
+#testimonial {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+.testimonial-image {
+    width: 20%;
+    border-radius: 50%;
+    margin: 1rem;
+}
+#Pricing {
+    text-align: center;
+}

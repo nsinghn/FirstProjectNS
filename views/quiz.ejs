@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="images/NSFavicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body class="quiz">
+    <h3>Thanks for opting for this quiz</h3>
+    <p>Please select the correct answer from the given choices</p>
+    <h4><%= quiz1 %></h4>
+
+<form action="/check-answer" method="post"> 
+  <input type="radio" id="age1" name="Answer" value="A">
+  <label for="age1"><%= quiz2 %></label>
+  <input type="radio" id="age2" name="Answer" value="B">
+  <label for="age2"><%= quiz3 %></label> 
+  <input type="radio" id="age3" name="Answer" value="C">
+  <label for="age3"><%= quiz4 %></label>
+  <input type="radio" id="age3" name="Answer" value="D">
+  <label for="age3"><%= quiz5 %></label><br>
+  <input type="hidden" name="Answer" value=<%= quiz6 %>>
+  <input type="hidden" name="Answer" value=<%= quiz8 %>>
+  <button type="submit">SUBMIT</button>
+  
+</form>
+
+<form action="/quiz-start" method="get">     
+    <button id="next-question" type="submit">NEXT QUESTION</button>
+</form> 
+
+    <form action="/" method="get">     
+        <button id="no-button" type="submit">BACK to HOME PAGE</button>
+    </form> 
+        
+</body>
+</html>
