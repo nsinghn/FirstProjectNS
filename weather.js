@@ -15,7 +15,7 @@ main().catch(err => console.log(err));
 
 async function main() {
   await mongoose.connect('mongodb+srv://nsinghn:A%40ch01s7463@cluster0.oc5ysln.mongodb.net/questionDB'); 
-}
+};
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
