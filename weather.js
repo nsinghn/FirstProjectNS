@@ -3,11 +3,19 @@ const bodyParser = require("body-parser");
 const https = require("https");
 const todaydate = require(__dirname + "/Tdate.js");
 const { stringify } = require("querystring");
-const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://nsinghn:A%40ch01s7463@cluster0.oc5ysln.mongodb.net/questionDB");
+//const mongoose = require('mongoose');
+//mongoose.connect("mongodb+srv://nsinghn:A%40ch01s7463@cluster0.oc5ysln.mongodb.net/questionDB");
 
 const app = express();
 app.set("view engine", "ejs");
+
+const mongoose = require('mongoose');
+
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect('mongodb+srv://nsinghn:A%40ch01s7463@cluster0.oc5ysln.mongodb.net/questionDB'); 
+}
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
