@@ -12,10 +12,24 @@ app.set("view engine", "ejs");
 const mongoose = require('mongoose');
 
 main().catch(err => console.log(err));
-
+/*
 async function main() {
   await mongoose.connect('mongodb+srv://nsinghn:A%40ch01s7463@cluster0.oc5ysln.mongodb.net/questionDB'); 
-};
+};*/
+
+async function main() {
+    url = 'mongodb+srv://nsinghn:A%40ch01s7463@cluster0.oc5ysln.mongodb.net/questionDB';
+    mongoose.connect(
+        url,
+        { useNewUrlParser: true, useUnifiedTopology: true },
+        function (err, res) {
+            try {
+                console.log('Connected to Database');
+            } catch (err) {
+                throw err;
+            }
+        });
+  };
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
