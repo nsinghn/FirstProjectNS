@@ -15,7 +15,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section >
+    <div class="container-fluid">
+   
     <nav id="Title" class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container">
         <a class="navbar-brand" href=" ">MyWorld</a>
@@ -43,23 +44,26 @@
         </div>
         </div>
     </nav>
-    </section>
+  
 
     <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="Cloud-Image">
-        <h1 class="Iam">I'm Narender</h2>
-        <h2 class="who">a full stack Web <span>Dev</span>eloper</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="Cloud-Image">
-        <img class="ns-photo" src="images/NS-photo.png" alt="NS-Photo">
+        <div><img class="top-cloud" src="images/cloud.png" alt="Cloud-Image"></div>
+        <div><h1 class="Iam">I'm Narender</h2>
+        <h2 class="who">a full stack Web <span>Dev</span>eloper</h2></div>
+        <div><img class="bottom-cloud" src="images/cloud.png" alt="Cloud-Image"></div>
+        <div> <img class="ns-photo" src="images/NS-photo.png" alt="NS-Photo"></div>
+       
     </div>
     <div id="mid-container">
         <h3 class="mid-h3">My Skills</h3>
         <div>
-            <img class="skills" src="images/skills.png" alt="skills-Image">
+            <div><img class="skills" src="images/skills.png" alt="skills-Image"></div>
+            
             <div class="skill-langs">
-               <p>Front End: HTML, CSS, JavaScript, JQuery, BootStrap</p>
-                <p>Back End: Java, PHP, Node js, API, EJS, RestAPI</p>
-                <p>DB: SQL, Mangoos</p>
+                <div><p>Front End: HTML, CSS, JavaScript, JQuery, BootStrap</p></div>
+                <div><p>Back End: Java, PHP, Node js, API, EJS, RestAPI</p></div>
+                <div><p>DB: SQL, MongoDB, Mongoose</p></div>
+                
             </div>           
         </div>    
            
@@ -71,7 +75,8 @@
         </div>
         
         <div>
-            <img class="city-image" src="images/chd-city.jpg" alt="Chd-Image">
+            <div> <img class="city-image" src="images/chd-city.jpg" alt="Chd-Image"></div>
+           
             <div class="city-details">                               
                
                
@@ -135,5 +140,6 @@
         </form>       
     </div>
     <script src="js/script.js"></script>
+</div>    
 </body>
 </html>

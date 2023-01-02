@@ -113,7 +113,7 @@ app.post("/question-add", function(req, res){
         } 
     });
     
-    status = "Thanks your Question is added, ADD MORE QUESTION"
+    status = "Thanks your Question is added, Add more questions"
     i = 1;
     console.log("Question Post request received")
     //mongoose.connection.close();
