@@ -44,7 +44,6 @@
             </div>
         </nav>
     </section>
-</body>
     <div class="top-container">
         <img class="top-cloud" src="images/cloud.png" alt="Cloud-Image">
         <h1 class="Iam">I'm Narender</h2>
@@ -123,15 +122,16 @@
                     <h3>Add Question</h3>
                 </div> 
     
-            <form action="/question-add" method="post"> 
-                <input type="text" name="question" placeholder="Add question"> <br> 
-                <input type="text" name="option1" placeholder="Add OptionA">  
-                <input type="text" name="option2" placeholder="Add OptionB"> 
-                <input type="text" name="option3" placeholder="Add OptionC"> 
-                <input type="text" name="option4" placeholder="Add OptionD"> <br> 
-                <input type="text" name="answer" placeholder="Add Answer(A/B/C/D)">        
-                <button type="submit"><%= QuestionStatus %></button>
-            </form>       
+                <form action="/question-add" method="post"> 
+                    <input type="text" name="question" placeholder="Add question" required minlength="3"> <br> 
+                    <input type="text" name="option1" placeholder="Add OptionA" required minlength="3">  
+                    <input type="text" name="option2" placeholder="Add OptionB" required minlength="3"> 
+                    <input type="text" name="option3" placeholder="Add OptionC" required minlength="3"> 
+                    <input type="text" name="option4" placeholder="Add OptionD" required minlength="3"> <br> 
+                    <input type="text" name="answer" placeholder="Add Answer(A/B/C/D)" required maxlength="1">  
+                    <button id="quiz-button" type="submit" class="btn btn-danger"><%= QuestionStatus %></button>      
+                   
+                </form>      
         </div>
         <script src="js/script.js"></script>
     </body>

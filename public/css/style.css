@@ -173,4 +173,17 @@ h1 {
     --bs-btn-font-size: .75rem;
     --bs-btn-margin-bottom: 20px;
 }
+#chd {
+    padding: 120px 50px 50px 50px;
+    text-align: center; 
+    color: #66BFBF;  
+    background-color: #E4F9F5;
+}
+#quiz {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    text-align: center; 
+    color: #66BFBF;  
+    background-color: #E4F9F5;
+}
   

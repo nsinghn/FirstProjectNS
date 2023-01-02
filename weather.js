@@ -91,8 +91,9 @@ app.post("/question-add", function(req, res){
             
         }else{
            
-            console.log("Count :", count)
-            const question = new Question ({
+            try {
+                 console.log("Count :", count)
+                const question = new Question ({
                 number: count+1,
                 question: req.body.question,
                 option1: req.body.option1,
@@ -103,6 +104,12 @@ app.post("/question-add", function(req, res){
                 });
                 question.save();
                 console.log("Count increamented :", count)
+              }
+              catch(err) {
+                message.innerHTML = "Input is " + err;
+              }
+
+           
         } 
     });
     
