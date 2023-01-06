@@ -198,13 +198,13 @@ h1 {
     }
     .bottom-cloud {
         left: 70px;
-        bottom: 450px;
+        bottom: 400px;
     }
    
     .ns-photo {
         width: 20%;
         right: 50px;
-        bottom: 430px;
+        bottom: 370px;
        
     }
     .Iam {
@@ -233,11 +233,7 @@ h1 {
    margin: 0px 30px 20px 70px;
      
   }
-  .thirdCol {
-    margin-top: 20px;
-      
-   }
-   .skill-langs {
+ .skill-langs {
     margin-left: 10px;
       
    }
