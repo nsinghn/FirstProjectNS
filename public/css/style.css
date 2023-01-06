@@ -186,10 +186,9 @@ h1 {
     background-color: #E4F9F5;
 }
 
-@media screen and (max-width : 560px) {
+@media screen and (max-width : 430px) {
     .top-container {
         padding-bottom: 50px;
-       
     }
     
     .top-cloud {
@@ -198,13 +197,13 @@ h1 {
     }
     .bottom-cloud {
         left: 70px;
-        bottom: 400px;
+        bottom: 375px;
     }
    
     .ns-photo {
         width: 20%;
         right: 50px;
-        bottom: 370px;
+        bottom: 355px;
        
     }
     .Iam {
