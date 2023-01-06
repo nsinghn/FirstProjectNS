@@ -43,98 +43,88 @@
             </div>
             </div>
         </nav>
-    </section>
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="Cloud-Image">
-        <h1 class="Iam">I'm Narender</h2>
-        <h2 class="who">a full stack Web <span>Dev</span>eloper</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="Cloud-Image">
-        <img class="ns-photo" src="images/NS-photo.png" alt="NS-Photo">
+    
+    <div class="top-container">  
+        <div class = "row">
+            <div class="col-lg-4 col-md-6"><img class="top-cloud" src="images/cloud.png" alt="Cloud-Image"></div>
+            <div class="col-lg-4 col-md-6"><h1 class="Iam">I'm Narender</h2>
+            <h2 class="who">a full stack Web <span>Dev</span>eloper</h2></div>
+            <div class="col-lg-4 col-md-6"><img class="bottom-cloud" src="images/cloud.png" alt="Cloud-Image">
+            <img class="ns-photo" src="images/NS-photo.png" alt="NS-Photo"></div>
+           
+        </div>
     </div>
     <div id="mid-container">
-        <h3 class="mid-h3">My Skills</h3>
-        <div>
-            <img class="skills" src="images/skills.png" alt="skills-Image">
-            <div class="skill-langs">
-               <p>Front End: HTML, CSS, JavaScript, JQuery, BootStrap</p>
-                <p>Back End: Java, PHP, Node js, API, EJS, RestAPI</p>
-                <p>DB: SQL, Mangoos</p>
+        <div class = "row">
+            <div class="col-lg-2 col-md-12"><h4 class="mid-h4">My Skills</h4></div>
+            <div class="col-lg-2 col-md-12"><img class="skills" src="images/skills.png" alt="skills-Image"></div>
+                
+            <div class="col-lg-8 col-md-12 skill-langs">
+                    <p>Front End: HTML, CSS, JavaScript, JQuery, BootStrap</p>
+                    <p>Back End: Java, PHP, Node js, API, EJS, RestAPI</p>
+                    <p>DB: SQL, MongoDB, Mongoose</p>
+                    
             </div>           
-        </div>    
-           
+        </div>         
+             
     </div>
     <BR>
-    <div id="third-container">
-        <div class="myCity">
-            <h3>My City</h3>
-        </div>
-        
-        <div>
-            <img class="city-image" src="images/chd-city.jpg" alt="Chd-Image">
-            <div class="city-details">                               
-               
-               <% if (cityEC === 200) { %>
-                   <div class="weatherDetails">
-                       <UL>
-                            <li><h4>Chandigarh, India</h4></li>
-                            <li><p><%= cityChd %>...<a href="/chd">Read More</a></p></li>
-                            <li><p>Today is <%= citydate %>,  <%= cityTime %></p></li>    
-                           <li><p>Current Temp in <%= cityName %> is <%= cityTemp %> Deg Centigrade </p></li>
-                           <li><p>Current Weather Description : <%= cityweatherDescp %> & 
-                           Weather Image: <img class="weatherImage" src=<%= cityiconURL %>></li>
-                        </UL>
-                   </div>
-              <% } else { %>
-               <p style="color: red;">Invalid City name. Plrease try again</p>
-               <% } %>            
-                          
-            </div>           
-        </div>       
-                         
-    </div>
-    <div id="fourth-container">
-        <div class="yrCity1">
-            <h3>Your City</h3>
-        </div>      
-              
-        <form action="/" method="post">
-            <p>Check weather in your city. 
-            <input type="text" name="city" placeholder="Enter your City Name">
-            <button type="submit">GO</button>
-        </form></p>
-        <div class="city-details">                               
-               
-            <% if (cityEC === 200) { %>
-                <div class="weatherDetails">
-                    <UL> 
-                        <li><p>Current Temp in <%= yrcityName %> is <%= yrcityTemp %> Deg Centigrade</p></li>
-                        <li><p>Current Weather Description : <%= yrcityWeatherDescp %> & 
-                        Weather Image: <img class="weatherImage" src=<%= yrcityIconURL %>></li>
-                     </UL>
+   
+        <div id="third-container">
+            <div class = "row">
+                <div class="col-lg-2 col-md-12"><h4 class="myCity">My City</h4></div>
+                <div class="col-lg-8 col-md-12 weatherDetails">
+                                <UL>
+                                        <li><h4>Chandigarh, India</h4></li>
+                                        <li><p><%= cityChd %>...<a href="/chd">Read More</a></p></li>
+                                        <li><p>Today is <%= citydate %>,  <%= cityTime %></p></li>    
+                                        <li><p>Current Temp in <%= cityName %> is <%= cityTemp %> Deg Centigrade </p></li>
+                                        <li><p>Current Weather Description : <%= cityweatherDescp %> & 
+                                        Weather Image: <img class="weatherImage" src=<%= cityiconURL %>></li>
+                                </UL>
                 </div>
-           <% } else { %>
-            <p style="color: red;">Invalid City name. Plrease try again</p>
-            <% } %>            
+                <div class="col-lg-2 col-md-12"> <img class="city-image" src="images/chd-city.jpg" alt="Chd-Image"></div>
+            </div>            
+                          
+        </div>
+        <div class="row" id="fourth-container">
+            <div class="col-lg-2 col-md-12 yrCity1"><h4></h4></div>      
+            <div class ="col-lg-8 col-md-12">    
+            <form action="/" method="post">
+                <p>Check weather in your city. 
+                <input type="text" name="city" placeholder="Enter your City Name">
+                <button type="submit" style="background-color: #66BFBF;">GO</button>
+            </form></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-12 yrCity1"><h4>Your City</h4></div>  
+
+            <div class="col-lg-8 col-md-12 city-details">                               
+             
+                    <p>Current Temp in <%= yrcityName %> is <%= yrcityTemp %> Deg Centigrade</p>
+                    <p>Current Weather Description : <%= yrcityWeatherDescp %> & 
+                        Weather Image: <img class="weatherImage" src=<%= yrcityIconURL %>></p>
+                     
+             </div>      
                        
          </div>   
     </div>
-    
-    <div id="DB-container">
-        <div class="quiz">
-            <h3>Quiz Time</h3>
-        </div> 
-        <div id="quiz-block">
+ 
+    <BR>
+    <div class = "row" id="DB-container">
+        <div class="col-lg-2 col-sm-12 quiz"><h4>Quiz Time</h4></div> 
+        <div class="col-lg-8 col-sm-12" id="quiz-block">
            
             <form class="button" action="/quiz-start" method="get">  
             <p>Are to willing to take a quiz           
-            <button id="yes-button" type="submit">YES</button>
+            <button id="yes-button" type="submit" style="background-color: #66BFBF">YES</button>
             </form></p>            
-        
         </div>
     </div>
+    <BR>
     <div id="Add-questions">
             <div class="add-question">
-                <h3>Add Question</h3>
+                <h4>Add Question</h4>
             </div> 
 
             <form action="/question-add" method="post"> 
@@ -149,5 +139,6 @@
             </form>      
     </div>
     <script src="js/script.js"></script>
+</section>    
 </body>
 </html>
