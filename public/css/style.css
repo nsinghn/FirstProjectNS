@@ -77,7 +77,7 @@ body {
 #Title {
     background-color: #66BFBF;
     height: 60px;
-   
+  
 }
 .container-fluid {
     
@@ -127,7 +127,7 @@ h1 {
     background-color: #E4F9F5;
 }
 .yrCity {
-    float: left;
+    
     margin-right: 0px;
     margin-left: 110px;
      
@@ -186,7 +186,7 @@ h1 {
     background-color: #E4F9F5;
 }
 
-@media screen and (max-width : 420px) {
+@media screen and (max-width : 560px) {
     .top-container {
         padding-bottom: 50px;
        
@@ -216,19 +216,43 @@ h1 {
     margin-bottom: 50px;
  }
  .mid-h4 {
-    margin-left: 50px;
+    margin-left: 100px;
     margin-bottom: 20px;
  }
  .weatherDetails { 
  margin-left: 0px;   
 }
-#third-container {
+#third-container, #fourth-container, #mid-container {
    margin-left: 0px ;
-   width: 95%;
+   width: 100%;
+}
+.top-container {
+    width: 100%;
 }
 .myCity {
-   margin: 0px 0px 20px 70px;
+   margin: 0px 30px 20px 70px;
      
   }
+  .thirdCol {
+    margin-top: 20px;
+      
+   }
+   .skill-langs {
+    margin-left: 10px;
+      
+   }
+   .skills {
+    margin-left: 70px;
+      
+   }
+   .city-image {
+    margin-right: 80px;
+      
+   }
+   .questions {
+    margin-left: 15px;
+      
+   }
+
 }
   

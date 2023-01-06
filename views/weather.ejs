@@ -15,7 +15,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav id="Title" class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <nav id="Title" class="navbar fixed-top navbar-expand-lg">
         <div class="container">
         <a class="navbar-brand" href=" ">MyWorld</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
         <div class="col-lg-4 col-md-6"><img class="top-cloud" src="images/cloud.png" alt="Cloud-Image"></div>
         <div class="col-lg-4 col-md-6"><h1 class="Iam">I'm Narender</h2>
         <h2 class="who">a full stack Web <span>Dev</span>eloper</h2></div>
-        <div class="col-lg-4 col-md-6"><img class="bottom-cloud" src="images/cloud.png" alt="Cloud-Image">
+        <div class="col-lg-4 col-md-6 thirdCol"><img class="bottom-cloud" src="images/cloud.png" alt="Cloud-Image">
         <img class="ns-photo" src="images/NS-photo.png" alt="NS-Photo"></div>
        
     </div>
@@ -71,6 +71,7 @@
 <div id="third-container">
     <div class = "row">
         <div class="col-lg-2 col-md-12"><h4 class="myCity">My City</h4></div>
+      
         <div class="col-lg-8 col-md-12 weatherDetails">
                         <UL>
                                 <li><h4>Chandigarh, India</h4></li>
@@ -86,7 +87,8 @@
                   
 </div>
     <div class="row" id="fourth-container">
-        <div class="col-lg-2 col-md-12 yrCity"><h4>Your City</h4></div>      
+        <div class="col-lg-3 col-md-12"><h4 class="yrCity">Your City</h4></div>
+            
         <div class ="col-lg-8 col-md-12">    
         <form action="/" method="post">
             <p>Check weather in your city. 
@@ -97,7 +99,8 @@
     </div>
     <BR>
     <div class = "row" id="DB-container">
-        <div class="col-lg-2 col-sm-12 quiz"><h4>Quiz Time</h4></div> 
+        
+        <div class="col-lg-3 col-sm-12"><h4 class = "quiz">Quiz Time</h4></div>
         <div class="col-lg-8 col-sm-12" id="quiz-block">
            
             <form class="button" action="/quiz-start" method="get">  
@@ -110,7 +113,7 @@
             <div class="add-question">
                 <h4>Add Question</h4>
             </div> 
-
+        <div class="questions">
         <form action="/question-add" method="post"> 
             <input type="text" name="question" placeholder="Add question" required minlength="3"> <br> 
             <input type="text" name="option1" placeholder="Add OptionA" required minlength="3">  
@@ -120,7 +123,8 @@
             <input type="text" name="answer" placeholder="Add Answer(A/B/C/D)" required maxlength="1">  
             <button id="quiz-button" type="submit" class="btn btn-danger"><%= QuestionStatus %></button>      
            
-        </form>       
+        </form> 
+        </div>      
     </div>
     <script src="js/script.js"></script>
    

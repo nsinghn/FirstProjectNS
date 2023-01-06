@@ -88,7 +88,7 @@
                       
     </div>
         <div class="row" id="fourth-container">
-            <div class="col-lg-2 col-md-12 yrCity"><h4>Your City</h4></div>      
+            <div class="col-lg-3 col-md-12"><h4 class="yrCity">Your City</h4></div>    
             <div class ="col-lg-8 col-md-12">    
             <form action="/" method="post">
                 <p>Check weather in your city. 
@@ -100,7 +100,7 @@
         </div>
         <BR>
         <div class = "row" id="DB-container">
-            <div class="col-lg-2 col-sm-12 quiz"><h4>Quiz Time</h4></div> 
+            <div class="col-lg-3 col-sm-12"><h4 class = "quiz">Quiz Time</h4></div>
             <div class="col-lg-8 col-sm-12" id="quiz-block">
                
                 <form class="button" action="/quiz-start" method="get">  
@@ -114,7 +114,7 @@
                 <div class="add-question">
                     <h4>Add Question</h4>
                 </div> 
-    
+            <div class="questions">
             <form action="/question-add" method="post"> 
                 <input type="text" name="question" placeholder="Add question" required minlength="3"> <br> 
                 <input type="text" name="option1" placeholder="Add OptionA" required minlength="3">  
@@ -124,7 +124,8 @@
                 <input type="text" name="answer" placeholder="Add Answer(A/B/C/D)" required maxlength="1">  
                 <button id="quiz-button" type="submit" class="btn btn-danger"><%= QuestionStatus %></button>      
                
-            </form>       
+            </form> 
+            </div>      
         </div>
         <script src="js/script.js"></script>
     </body>
