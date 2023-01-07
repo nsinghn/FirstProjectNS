@@ -127,15 +127,12 @@ h1 {
     background-color: #E4F9F5;
 }
 .yrCity {
-    
-    margin-right: 0px;
-    margin-left: 110px;
+    margin: 0px 0px 0px 110px;
      
   }
 .yrCity1 {
-    
-    margin-right: 0px;
-    margin-left: 110px;     
+    margin: 0px 0px 0px 110px;
+      
   }
   .yrCity2 {
     float: left;
@@ -186,7 +183,7 @@ h1 {
     background-color: #E4F9F5;
 }
 
-@media screen and (max-width : 430px) {
+@media screen and (max-width : 560px) {
     .top-container {
         padding-bottom: 50px;
     }
