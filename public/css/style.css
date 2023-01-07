@@ -184,6 +184,9 @@ h1 {
 }
 
 @media screen and (max-width : 560px) {
+    body {
+        font-size: x-small;
+    }
     .top-container {
         padding-bottom: 50px;
     }

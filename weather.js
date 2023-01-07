@@ -55,6 +55,7 @@ if (output.Answer[0].toUpperCase()==output.Answer[1].toUpperCase()){
     console.log(result)
 } else {
     result = "INCORRECT";
+    
     console.log(result)
 }
 x = output.Answer[2];
